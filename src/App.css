@@ -1,38 +1,52 @@
-.App {
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr repeat(6, 80px);
+  border-radius: 15px;
+  outline: 1px solid #ccc;
+}
+
+.grid__header__item {
+  background-color: rgba(127, 255, 212, 0.4);
+  color: rgb(0, 162, 138);
+  font-weight: 500;
   text-align: center;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid__header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid__header__item:last-child {
+  border-top-right-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid__header__item:first-child {
+  border-top-left-radius: 15px;
+}
+
+.grid__day {
+  outline: 1px solid #ccc;
+}
+.grid__day:nth-child(37) {
+  border-bottom-left-radius: 15px;
+}
+.grid__day:nth-child(43) {
+  border-bottom-right-radius: 15px;
+}
+
+.calendar__header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.calendar__header__buttons {
+  margin: auto 0;
+  margin-left: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  padding: 1rem 5rem;
 }
