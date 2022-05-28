@@ -1,0 +1,41 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-contents {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.modal-button {
+  background-color: darkcyan;
+  color: #fff;
+  border: 2px solid darkcyan;
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal-button:hover {
+  border: 2px solid darkcyan;
+  background-color: #fff;
+  color: darkcyan;
+  cursor: pointer;
+}
+
+.commit-message {
+  max-height: 20rem;
+  overflow: auto;
+}

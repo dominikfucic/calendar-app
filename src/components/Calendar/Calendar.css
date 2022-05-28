@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+  border-radius: 20px;
+  border-spacing: 0;
+}
+
+table td {
+  min-width: 7rem;
+  max-width: 7rem;
+  padding: 8px;
+}
