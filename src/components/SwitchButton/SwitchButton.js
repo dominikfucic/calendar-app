@@ -1,4 +1,5 @@
 import React from "react";
+import "./SwitchButton.css";
 
 function SwitchButton(props) {
   return (

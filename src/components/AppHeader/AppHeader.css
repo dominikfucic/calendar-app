@@ -1,0 +1,12 @@
+.btn-container {
+  margin: auto 0;
+  margin-left: auto;
+}
+
+.btn-container input:first-child {
+  margin-right: 7px;
+}
+
+.calendar-header {
+  display: flex;
+}

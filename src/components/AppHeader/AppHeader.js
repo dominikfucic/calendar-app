@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { format, sub, add } from "date-fns";
 import SwitchButton from "../SwitchButton/SwitchButton";
 import { DateContext } from "../../App";
+import "./AppHeader.css";
 
 function AppHeader(props) {
   const { date, setDate } = useContext(DateContext);

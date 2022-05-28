@@ -1,0 +1,15 @@
+.btn-container input {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border: 1px solid lightseagreen;
+  color: lightseagreen;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-container input:hover {
+  background-color: lightseagreen;
+  color: #fff;
+  cursor: pointer;
+}
